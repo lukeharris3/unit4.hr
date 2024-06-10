@@ -1,0 +1,137 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  color: #222; 
+}
+
+header {
+  background-color: rgba(34, 34, 34, 0.85); 
+  color: #fff;
+  padding: 1.5rem; 
+  text-align: center;
+  margin-bottom: 2.5rem; 
+  position: relative;
+}
+
+header .logo {
+  position: absolute;
+  top: 15px; 
+  left: 15px; 
+  height: 60px; 
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem; 
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); 
+}
+
+main {
+  padding: 2.5rem; 
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95); 
+  border-radius: 10px; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); 
+}
+
+section {
+  margin-bottom: 2.5rem; 
+  background: #fafafa; 
+  padding: 1.5rem; 
+  border-radius: 10px; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 0.75rem; 
+  font-weight: 600; 
+}
+
+form input,
+form button {
+  margin-bottom: 1.25rem; 
+  padding: 0.75rem; 
+  border: 1px solid #bbb; 
+  border-radius: 6px; 
+}
+
+form button {
+  background-color: #222; 
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+form button:hover {
+  background-color: #444; 
+  transform: scale(1.05); 
+}
+
+#department-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem; 
+}
+
+.department-column {
+  flex: 1;
+  min-width: 260px; 
+  padding: 1.5rem; 
+  border-radius: 10px; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+  background: #fff; 
+}
+
+.department-column h3 {
+  margin-top: 0;
+}
+
+.department-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.department-column li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0; 
+  border-bottom: 1px solid #ddd; 
+}
+
+.department-column li:last-child {
+  border-bottom: none;
+}
+
+.department-column button {
+  background-color: #ff3b3b; 
+  color: #fff;
+  border: none;
+  padding: 0.75rem; 
+  border-radius: 6px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  margin-left: 0.75rem; 
+}
+
+.department-column button:hover {
+  background-color: #ff6161; 
+  transform: scale(1.05); 
+}
+
+button.update {
+  background-color: #5cb85c; 
+}
+
+button.update:hover {
+  background-color: #4cae4c; 
+}

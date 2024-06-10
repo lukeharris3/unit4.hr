@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR directory</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>HR directory</h1>
+    </header>
+    <main>
+      <section id="employees">
+        <h2>Employee</h2>
+        <div id="department-columns"></div>
+      </section>
+      <section id="departments">
+        <h2>Department</h2>
+        <ul id="department-list"></ul>
+      </section>
+      <section id="add-employee">
+        <h2>Add employees</h2>
+        <form id="employee-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="department_id">Department ID:</label>
+          <input
+            type="number"
+            id="department_id"
+            name="department_id"
+            required
+          />
+          <button type="submit">Add employees</button>
+        </form>
+      </section>
+      <section id="update-employee">
+        <h2>Update employees</h2>
+        <form id="update-form">
+          <label for="update-id">Employee ID:</label>
+          <input type="number" id="update-id" name="update-id" required />
+          <label for="update-name">Name:</label>
+          <input type="text" id="update-name" name="update-name" required />
+          <label for="update-department_id">Department ID:</label>
+          <input
+            type="number"
+            id="update-department_id"
+            name="update-department_id"
+            required
+          />
+          <button type="submit" class="update">Update employee</button>
+        </form>
+      </section>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
